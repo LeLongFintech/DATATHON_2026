@@ -245,7 +245,7 @@ Mỗi model (Revenue & COGS) sinh ra:
 
 **Bước 2:** Upload dữ liệu
 - Vào tab **Data** → **Add Data** → **Upload** → chọn file `train.xlsx`
-- Kaggle sẽ mount file vào `/kaggle/input/<tên-dataset>/train.xlsx`
+- Kaggle sẽ mount file vào `/kaggle/input/<tên-dataset>/sales.csv`
 - Sửa dòng config trong notebook:
 ```python
 DATA_PATH = "/kaggle/input/<tên-dataset>/train.xlsx"
@@ -274,12 +274,12 @@ pip install xgboost optuna shap pandas numpy scikit-learn matplotlib holidays op
 ```
 your-folder/
 ├── train_model.ipynb
-└── train.xlsx
+└── sales.csv
 ```
 
 **Bước 3:** Đảm bảo `DATA_PATH` trong notebook là:
 ```python
-DATA_PATH = "train.xlsx"
+DATA_PATH = "sales.csv"
 ```
 
 **Bước 4:** Chạy notebook
