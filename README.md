@@ -8,7 +8,7 @@ Dự báo **Doanh thu (Revenue)** và **Chi phí hàng bán (COGS)** theo ngày 
 
 ```
 ├── train_model.ipynb          # Notebook huấn luyện chính (toàn bộ pipeline)
-├── train.xlsx                 # Dữ liệu đầu vào (bắt buộc)
+├── sales.csv                 # Dữ liệu đầu vào (bắt buộc)
 └── submission.csv             # Kết quả dự báo đầu ra (sinh sau khi chạy)
 ```
 
@@ -20,7 +20,7 @@ Dự báo **Doanh thu (Revenue)** và **Chi phí hàng bán (COGS)** theo ngày 
 
 | Thuộc tính | Chi tiết |
 |---|---|
-| File | `train.xlsx` |
+| File | `sales.csv` |
 | Cột bắt buộc | `date`, `Revenue`, `COGS` |
 | Định dạng cột date | `YYYY-MM-DD` |
 | Tập huấn luyện | 04/07/2012 → 31/12/2022 |
@@ -72,7 +72,7 @@ Khai báo toàn bộ thư viện và các hằng số cấu hình:
 | `OPTIMAL_WINDOWS` | [3, 7] |
 
 ### Bước 3 — Tải dữ liệu
-Đọc `train.xlsx`, set `date` làm index, tách riêng 2 series:
+Đọc `sales.csv`, set `date` làm index, tách riêng 2 series:
 - `train_series` — Revenue từ 2012 đến 2022
 - `train_cogs` — COGS từ 2012 đến 2022
 
