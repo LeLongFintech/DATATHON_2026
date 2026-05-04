@@ -244,11 +244,11 @@ Mỗi model (Revenue & COGS) sinh ra:
 **Bước 1:** Tạo notebook mới trên [kaggle.com/code](https://www.kaggle.com/code)
 
 **Bước 2:** Upload dữ liệu
-- Vào tab **Data** → **Add Data** → **Upload** → chọn file `train.xlsx`
+- Vào tab **Data** → **Add Data** → **Upload** → chọn file `sales.csv`
 - Kaggle sẽ mount file vào `/kaggle/input/<tên-dataset>/sales.csv`
 - Sửa dòng config trong notebook:
 ```python
-DATA_PATH = "/kaggle/input/<tên-dataset>/train.xlsx"
+DATA_PATH = "/kaggle/input/<tên-dataset>/sales.csv"
 ```
 
 **Bước 3:** Upload notebook
